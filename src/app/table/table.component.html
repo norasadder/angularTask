@@ -1,0 +1,40 @@
+<!-- <p>table works!</p> -->
+<div class="data-table">
+  <!-- <form class="table-form"> -->
+  <table>
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Second Name</th>
+        <th>Final Name</th>
+        <th>Age</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of tableData; let i = index">
+        <td id="firstName_{{ i }}">
+          <!-- {{ user.firstName }} -->
+          <input name="firstName" [(ngModel)]="user.firstName" required />
+        </td>
+        <td id="secondName_{{ i }}">
+          <!-- {{ user.secondName }} -->
+          <input name="secondName" [(ngModel)]="user.secondName" required />
+        </td>
+        <td id="finalName_{{ i }}">
+          <!-- {{ user.finalName }} -->
+          <input name="finalName" [(ngModel)]="user.finalName" required />
+        </td>
+        <td id="age_{{ i }}">
+          <!-- {{ user.age }} -->
+          <input type="number" name="age" [(ngModel)]="user.age" required />
+        </td>
+        <td class="action-buttons">
+          <button class="delete-button" (click)="deleteRow(i)">Delete</button>
+          <button class="edit-button" (click)="updateRow(i)">Update</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- </form> -->
+</div>

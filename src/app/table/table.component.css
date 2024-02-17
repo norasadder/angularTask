@@ -1,0 +1,86 @@
+:root {
+  --white: #fff;
+  --red: #631f1f;
+  --green: #005e66;
+}
+
+.data-table {
+  width: 100%;
+}
+
+.table-form {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  /* margin-top: 20px; */
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  box-sizing: border-box;
+  text-align: center;
+  color: black;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.action-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.action-buttons > button {
+  font-size: 1rem;
+  padding: 10px;
+  /* color: var(--white); */
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.delete-button {
+  /* background-color: var(--red); */
+  background-color: #a13030;
+  color: #fff;
+  border: none;
+}
+
+.delete-button:hover {
+  border: solid 1px #a13030;
+  background-color: transparent;
+  color: #a13030;
+}
+
+.edit-button {
+  /* background-color: var(--green); */
+  background-color: #005e66;
+  color: #fff;
+  border: none;
+}
+
+.edit-button:hover {
+  border: solid 1px #005e66;
+  background-color: transparent;
+  color: #005e66;
+}
+
+input {
+  font-size: 1rem;
+  padding: 5px;
+  border: none;
+  text-align: center;
+}
+
+input:focus {
+  border: solid 1px #dcdcdc;
+  outline: none;
+  border-radius: 5px;
+}
